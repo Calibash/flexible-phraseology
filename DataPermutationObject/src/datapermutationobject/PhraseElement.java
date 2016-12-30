@@ -14,6 +14,16 @@ package datapermutationobject;
  * not, then the phrase element interface isn't in scope, or the object itself 
  * isn't fully in the correct scope.
  * 
+ * further considerations; the initial hub for commonality between different 
+ * phrase elements most likely needs to hinge on some the PhraseElement itself, 
+ * with sub-interfaces perhaps extending the interface into specific needs.
+ * So, what commonality is shared by the Phrase elements in a system? That 
+ * itself is much more likely to be highly context specific. Sets of string, 
+ * integer, and decimal combinations in a discussion context are likely to be 
+ * very dissimilar to sets designed for maximizing the realism of a set of 
+ * video game character's dynamic dialogue (without making use of a full sized 
+ * interpreter pattern)
+ * 
  * @author Calibash
  */
 public interface PhraseElement {
