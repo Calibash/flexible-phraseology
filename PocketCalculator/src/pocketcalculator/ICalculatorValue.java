@@ -10,5 +10,5 @@ package pocketcalculator;
  * @author Calibash
  */
 public interface ICalculatorValue {
-    
+    double presentValue();
 }
