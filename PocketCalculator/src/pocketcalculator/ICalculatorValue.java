@@ -6,7 +6,8 @@
 package pocketcalculator;
 
 /**
- *
+ *  purpose; abstract storage of values, constants, etc stored internally by
+ * the calculator.
  * @author Calibash
  */
 public interface ICalculatorValue {
