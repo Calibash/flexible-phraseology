@@ -28,4 +28,5 @@ package datapermutationobject;
  */
 public interface IPhraseElement<E> {
     E composePhrase();
+    String getDescription();
 }
