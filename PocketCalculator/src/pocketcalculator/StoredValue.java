@@ -15,8 +15,8 @@ public class StoredValue implements ICalculatorValue{
     private LinkedList<ICalculatorValue> previousValueList;
     private ICalculatorValue currentValue;
     public StoredValue(ICalculatorValue input){
-        this.previousValueList.add(input);
         this.currentValue = input;
+        this.previousValueList.add(this.currentValue);
     }
     @Override
     public double presentValue() {
