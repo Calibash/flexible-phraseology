@@ -26,6 +26,6 @@ package datapermutationobject;
  * 
  * @author Calibash
  */
-public interface IPhraseElement {
-    
+public interface IPhraseElement<E> {
+    E composePhrase();
 }
