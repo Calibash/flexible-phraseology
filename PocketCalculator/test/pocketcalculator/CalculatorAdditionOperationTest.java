@@ -51,4 +51,14 @@ public class CalculatorAdditionOperationTest {
         assertEquals(expResult, result.presentValue(), 0);
     }
     
+    @Test
+    public void testPerformLargeAdditionOperation() {
+        System.out.println("perform large addition Operation");
+        ICalcValue input1 = new CalcBaseValue(1023434);
+        ICalcValue input2 = new CalcBaseValue(1403432);
+        CalculatorAdditionOperation instance = new CalculatorAdditionOperation();
+        double expResult = 2426866;
+        ICalcValue result = instance.performOperation(input1, input2);
+        assertEquals(expResult, result.presentValue(), 0);
+    }
 }
