@@ -13,12 +13,11 @@ public class CalculatorAdditionOperation implements ICalculatorOperation{
     public CalculatorAdditionOperation(){}
     @Override
     public ICalcValue performOperation(
-            ICalcValue firstValue, 
-            ICalcValue secondValue) {
-        double operationResult;
-        operationResult = 
-                firstValue.presentValue() + 
-                secondValue.presentValue();
+            ICalcValue input1, 
+            ICalcValue input2) {
+        double operationResult = 
+                input1.presentValue() + 
+                input2.presentValue();
         return new CalcBaseValue(operationResult);
     }
     
