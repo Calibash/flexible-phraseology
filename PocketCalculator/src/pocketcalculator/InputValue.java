@@ -9,7 +9,7 @@ package pocketcalculator;
  *
  * @author Calibash
  */
-public class InputValue implements ICalculatorValue{
+public class InputValue implements ICalcValue{
     private final double storedUserInput;
     public InputValue(double userInput){
         this.storedUserInput = userInput;

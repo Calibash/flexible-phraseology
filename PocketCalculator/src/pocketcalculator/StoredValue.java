@@ -11,10 +11,10 @@ import java.util.LinkedList;
  *
  * @author Calibash
  */
-public class StoredValue implements ICalculatorValue{
-    private LinkedList<ICalculatorValue> previousValueList;
-    private ICalculatorValue currentValue;
-    public StoredValue(ICalculatorValue input){
+public class StoredValue implements ICalcValue{
+    private LinkedList<ICalcValue> previousValueList;
+    private ICalcValue currentValue;
+    public StoredValue(ICalcValue input){
         this.currentValue = input;
         this.previousValueList.add(this.currentValue);
     }

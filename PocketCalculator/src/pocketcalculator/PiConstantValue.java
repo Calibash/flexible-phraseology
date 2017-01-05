@@ -9,7 +9,7 @@ package pocketcalculator;
  *
  * @author Calibash
  */
-public class PiConstantValue implements ICalculatorValue{
+public class PiConstantValue implements ICalcValue{
     private final double TruncatedPI = 3.14159265;
     public PiConstantValue(){
         //TODO - any needed cleanup

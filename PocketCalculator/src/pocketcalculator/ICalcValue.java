@@ -10,6 +10,6 @@ package pocketcalculator;
  * the calculator.
  * @author Calibash
  */
-public interface ICalculatorValue {
+public interface ICalcValue {
     double presentValue();
 }

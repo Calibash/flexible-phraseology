@@ -12,9 +12,9 @@ package pocketcalculator;
 public class CalculatorAdditionOperation implements ICalculatorOperation{
     public CalculatorAdditionOperation(){}
     @Override
-    public ICalculatorValue performOperation(
-            ICalculatorValue firstValue, 
-            ICalculatorValue secondValue) {
+    public ICalcValue performOperation(
+            ICalcValue firstValue, 
+            ICalcValue secondValue) {
         double operationResult;
         operationResult = 
                 firstValue.presentValue() + 

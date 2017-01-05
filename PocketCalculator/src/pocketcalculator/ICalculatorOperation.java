@@ -11,6 +11,6 @@ package pocketcalculator;
  * @author Calibash
  */
 public interface ICalculatorOperation {
-    ICalculatorValue performOperation(
-            ICalculatorValue firstValue, ICalculatorValue secondValue);
+    ICalcValue performOperation(
+            ICalcValue firstValue, ICalcValue secondValue);
 }
