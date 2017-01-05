@@ -19,7 +19,7 @@ public class CalculatorAdditionOperation implements ICalculatorOperation{
         operationResult = 
                 firstValue.presentValue() + 
                 secondValue.presentValue();
-        return new InputValue(operationResult);
+        return new CalcBaseValue(operationResult);
     }
     
 }
