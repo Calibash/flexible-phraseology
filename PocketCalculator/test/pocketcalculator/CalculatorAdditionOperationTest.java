@@ -42,16 +42,13 @@ public class CalculatorAdditionOperationTest {
      */
     @Test
     public void testPerformSmallAdditionOperation() {
-        System.out.println("performOperation");
-//        final DependencyToMockClass mock
+        System.out.println("perform small addition Operation");
         ICalcValue input1 = new CalcBaseValue(10);
         ICalcValue input2 = new CalcBaseValue(14);
         CalculatorAdditionOperation instance = new CalculatorAdditionOperation();
         double expResult = 24;
         ICalcValue result = instance.performOperation(input1, input2);
         assertEquals(expResult, result.presentValue(), 0);
-        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
     }
     
 }
