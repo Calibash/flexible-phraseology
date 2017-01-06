@@ -13,13 +13,13 @@ public class CalcAdditionOperation implements ICalcOperation{
     public CalcAdditionOperation(){}
     @Override
     public ICalcValue performOperation(
-            ICalcValue input1, 
-            ICalcValue input2) {
+            ICalcValue firstValue, 
+            ICalcValue secondValue) {
         //TODO - make sure that this is up to snuff in terms of coding best 
         //practices. does this need more checking?
         return new CalcBaseValue(
-                input1.presentValue() + 
-                input2.presentValue());
+                firstValue.presentValue() + 
+                secondValue.presentValue());
     }
     
 }
