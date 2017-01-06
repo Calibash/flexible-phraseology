@@ -15,10 +15,11 @@ public class CalculatorAdditionOperation implements ICalcOperation{
     public ICalcValue performOperation(
             ICalcValue input1, 
             ICalcValue input2) {
-        double operationResult = 
+        //TODO - make sure that this is up to snuff in terms of coding best 
+        //practices. does this need more checking?
+        return new CalcBaseValue(
                 input1.presentValue() + 
-                input2.presentValue();
-        return new CalcBaseValue(operationResult);
+                input2.presentValue());
     }
     
 }
