@@ -48,12 +48,14 @@ public class CalcDivisionOperationTest {
         ICalcValue secondValue = new CalcBaseValue(0);
         CalcDivisionOperation instance = new CalcDivisionOperation();
         Boolean exceptionThrown = false;
+        UnsupportedOperationException thrownException = null;
         try{
             instance.performOperation(firstValue, secondValue);
         } catch (UnsupportedOperationException e){
             exceptionThrown = true;
+            thrownException = e;
         }
         assertTrue(exceptionThrown);
-//        assertEquals(expResult.presentValue(), result.presentValue(), 0);
+        assertNotNull(thrownException);
     }
 }
