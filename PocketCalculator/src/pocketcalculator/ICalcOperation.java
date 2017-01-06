@@ -10,7 +10,7 @@ package pocketcalculator;
  * operation to be specified during runtime.
  * @author Calibash
  */
-public interface ICalculatorOperation {
+public interface ICalcOperation {
     ICalcValue performOperation(
             ICalcValue firstValue, ICalcValue secondValue);
 }

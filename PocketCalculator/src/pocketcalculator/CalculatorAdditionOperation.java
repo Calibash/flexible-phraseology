@@ -9,7 +9,7 @@ package pocketcalculator;
  *
  * @author Calibash
  */
-public class CalculatorAdditionOperation implements ICalculatorOperation{
+public class CalculatorAdditionOperation implements ICalcOperation{
     public CalculatorAdditionOperation(){}
     @Override
     public ICalcValue performOperation(
