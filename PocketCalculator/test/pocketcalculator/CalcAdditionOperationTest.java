@@ -46,9 +46,9 @@ public class CalcAdditionOperationTest {
         ICalcValue input1 = new CalcBaseValue(10);
         ICalcValue input2 = new CalcBaseValue(14);
         CalcAdditionOperation instance = new CalcAdditionOperation();
-        double expResult = 24;
+        ICalcValue expResult = new CalcBaseValue(24);
         ICalcValue result = instance.performOperation(input1, input2);
-        assertEquals(expResult, result.presentValue(), 0);
+        assertEquals(expResult.presentValue(), result.presentValue(), 0);
     }
     
     @Test
@@ -57,8 +57,8 @@ public class CalcAdditionOperationTest {
         ICalcValue input1 = new CalcBaseValue(1023434);
         ICalcValue input2 = new CalcBaseValue(1403432);
         CalcAdditionOperation instance = new CalcAdditionOperation();
-        double expResult = 2426866;
+        ICalcValue expResult = new CalcBaseValue(2426866);
         ICalcValue result = instance.performOperation(input1, input2);
-        assertEquals(expResult, result.presentValue(), 0);
+        assertEquals(expResult.presentValue(), result.presentValue(), 0);
     }
 }

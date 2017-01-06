@@ -14,9 +14,9 @@ import static org.junit.Assert.*;
  *
  * @author Calibash
  */
-public class CalcSubtractionOperationTest {
+public class CalcMultiplicationOperationTest {
     
-    public CalcSubtractionOperationTest() {
+    public CalcMultiplicationOperationTest() {
     }
     
     @BeforeClass
@@ -28,17 +28,17 @@ public class CalcSubtractionOperationTest {
     }
 
     /**
-     * Test of performOperation method, of class CalcSubtractionOperation.
+     * Test of performOperation method, of class CalcMultiplicationOperation.
      */
     @Test
-    public void testPerformSmallSubtractionOperation() {
-        System.out.println("PerformSmallSubtractionOperation");
-        ICalcValue firstValue = new CalcBaseValue(343);
-        ICalcValue secondValue = new CalcBaseValue(23);
-        CalcSubtractionOperation instance = new CalcSubtractionOperation();
-        ICalcValue expResult = new CalcBaseValue(320);
+    public void testPerformOperation() {
+        System.out.println("performOperation");
+        ICalcValue firstValue = new CalcBaseValue(10);
+        ICalcValue secondValue = new CalcBaseValue(34);
+        CalcMultiplicationOperation instance = new CalcMultiplicationOperation();
+        ICalcValue expResult = new CalcBaseValue(340);
         ICalcValue result = instance.performOperation(firstValue, secondValue);
-        assertEquals(expResult.presentValue(), result.presentValue(), 0);
+        assertEquals(expResult.presentValue(), result.presentValue(),0);
     }
     
 }

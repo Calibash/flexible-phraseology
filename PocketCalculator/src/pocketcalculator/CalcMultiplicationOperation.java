@@ -9,15 +9,14 @@ package pocketcalculator;
  *
  * @author Calibash
  */
-public class CalcAdditionOperation implements ICalcOperation{
-    public CalcAdditionOperation(){}
+public class CalcMultiplicationOperation implements ICalcOperation{
+    public CalcMultiplicationOperation(){}
     @Override
     public ICalcValue performOperation(
             ICalcValue firstValue, 
             ICalcValue secondValue) {
-        //TODO - confirm structural stability
         return new CalcBaseValue(
-                firstValue.presentValue() + secondValue.presentValue());
+                firstValue.presentValue() * secondValue.presentValue());
     }
     
 }
