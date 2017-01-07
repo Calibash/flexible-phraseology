@@ -32,7 +32,7 @@ public class CalcMultiplicationOperationTest {
      */
     @Test
     public void testPerformOperation() {
-        System.out.println("performOperation");
+        System.out.println("small integer multiplication");
         ICalcValue firstValue = new CalcBaseValue(10);
         ICalcValue secondValue = new CalcBaseValue(34);
         CalcMultiplicationOperation instance = new CalcMultiplicationOperation();

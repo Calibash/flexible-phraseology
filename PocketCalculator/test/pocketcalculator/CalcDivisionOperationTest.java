@@ -32,7 +32,7 @@ public class CalcDivisionOperationTest {
      */
     @Test
     public void testPerformOperation() {
-        System.out.println("performOperation");
+        System.out.println("small integer division");
         ICalcValue firstValue = new CalcBaseValue(320);
         ICalcValue secondValue = new CalcBaseValue(10);
         CalcDivisionOperation instance = new CalcDivisionOperation();
@@ -43,7 +43,7 @@ public class CalcDivisionOperationTest {
     
     @Test
         public void testDividesByZeroDoesntCrashEverything() {
-        System.out.println("DividesByZeroDoesntCrashEverything");
+        System.out.println("Divides By Zero Doesnt Crash Everything");
         ICalcValue firstValue = new CalcBaseValue(320);
         ICalcValue secondValue = new CalcBaseValue(0);
         CalcDivisionOperation instance = new CalcDivisionOperation();

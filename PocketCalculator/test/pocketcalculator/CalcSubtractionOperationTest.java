@@ -32,7 +32,7 @@ public class CalcSubtractionOperationTest {
      */
     @Test
     public void testPerformSmallSubtractionOperation() {
-        System.out.println("PerformSmallSubtractionOperation");
+        System.out.println("Small integer subtraction");
         ICalcValue firstValue = new CalcBaseValue(343);
         ICalcValue secondValue = new CalcBaseValue(23);
         CalcSubtractionOperation instance = new CalcSubtractionOperation();
