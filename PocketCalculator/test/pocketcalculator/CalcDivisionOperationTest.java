@@ -21,6 +21,7 @@ public class CalcDivisionOperationTest {
     
     @BeforeClass
     public static void setUpClass() {
+        System.out.println("CalcDivisionOperationTest running...");
     }
     
     @AfterClass

@@ -23,6 +23,7 @@ public class CalcAdditionOperationTest {
     
     @BeforeClass
     public static void setUpClass() {
+        System.out.println("CalcAdditionOperationTest running...");
     }
     
     @AfterClass
@@ -31,6 +32,7 @@ public class CalcAdditionOperationTest {
     
     @Before
     public void setUp() {
+        
     }
     
     @After
