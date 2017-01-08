@@ -34,10 +34,10 @@ public class CalcDivisionOperationTest {
     @Test
     public void testPerformOperation() {
         System.out.println("small integer division");
-        ICalcValue firstValue = new CalcBaseValue(320);
-        ICalcValue secondValue = new CalcBaseValue(10);
+        ICalcValue firstValue = new CalcValue(320);
+        ICalcValue secondValue = new CalcValue(10);
         CalcDivisionOperation instance = new CalcDivisionOperation();
-        ICalcValue expResult = new CalcBaseValue(32);
+        ICalcValue expResult = new CalcValue(32);
         ICalcValue result = instance.performOperation(firstValue, secondValue);
         assertEquals(expResult.presentValue(), result.presentValue(), 0);
     }
@@ -45,8 +45,8 @@ public class CalcDivisionOperationTest {
     @Test
         public void testDividesByZeroDoesntCrashEverything() {
         System.out.println("Divides By Zero Doesnt Crash Everything");
-        ICalcValue firstValue = new CalcBaseValue(320);
-        ICalcValue secondValue = new CalcBaseValue(0);
+        ICalcValue firstValue = new CalcValue(320);
+        ICalcValue secondValue = new CalcValue(0);
         CalcDivisionOperation instance = new CalcDivisionOperation();
         Boolean exceptionThrown = false;
         UnsupportedOperationException thrownException = null;

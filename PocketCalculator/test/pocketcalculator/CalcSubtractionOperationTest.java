@@ -34,10 +34,10 @@ public class CalcSubtractionOperationTest {
     @Test
     public void testPerformSmallSubtractionOperation() {
         System.out.println("Small integer subtraction");
-        ICalcValue firstValue = new CalcBaseValue(343);
-        ICalcValue secondValue = new CalcBaseValue(23);
+        ICalcValue firstValue = new CalcValue(343);
+        ICalcValue secondValue = new CalcValue(23);
         CalcSubtractionOperation instance = new CalcSubtractionOperation();
-        ICalcValue expResult = new CalcBaseValue(320);
+        ICalcValue expResult = new CalcValue(320);
         ICalcValue result = instance.performOperation(firstValue, secondValue);
         assertEquals(expResult.presentValue(), result.presentValue(), 0);
     }

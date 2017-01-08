@@ -9,9 +9,9 @@ package pocketcalculator;
  *
  * @author Calibash
  */
-public class CalcBaseValue implements ICalcValue{
+public class CalcValue implements ICalcValue{
     private final double storedUserInput;
-    public CalcBaseValue(double userInput){
+    public CalcValue(double userInput){
         this.storedUserInput = userInput;
     }
     @Override

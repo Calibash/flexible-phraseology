@@ -15,7 +15,7 @@ public class CalcSubtractionOperation implements ICalcOperation{
     public ICalcValue performOperation(
             ICalcValue firstValue, 
             ICalcValue secondValue) {
-        return new CalcBaseValue(
+        return new CalcValue(
                 firstValue.presentValue() - secondValue.presentValue());
     }
     

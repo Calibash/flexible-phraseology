@@ -16,7 +16,7 @@ public class CalcAdditionOperation implements ICalcOperation{
             ICalcValue firstValue, 
             ICalcValue secondValue) {
         //TODO - confirm structural stability
-        return new CalcBaseValue(
+        return new CalcValue(
                 firstValue.presentValue() + secondValue.presentValue());
     }
     

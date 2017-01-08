@@ -16,7 +16,7 @@ public class CalcDivisionOperation implements ICalcOperation{
             ICalcValue firstValue, 
             ICalcValue secondValue) {
         if (secondValue.presentValue()!= 0){            
-            return new CalcBaseValue(
+            return new CalcValue(
                 firstValue.presentValue() / secondValue.presentValue());
         }
         throw new UnsupportedOperationException(

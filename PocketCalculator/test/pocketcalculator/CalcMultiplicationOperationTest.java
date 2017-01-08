@@ -34,10 +34,10 @@ public class CalcMultiplicationOperationTest {
     @Test
     public void testPerformOperation() {
         System.out.println("small integer multiplication");
-        ICalcValue firstValue = new CalcBaseValue(10);
-        ICalcValue secondValue = new CalcBaseValue(34);
+        ICalcValue firstValue = new CalcValue(10);
+        ICalcValue secondValue = new CalcValue(34);
         CalcMultiplicationOperation instance = new CalcMultiplicationOperation();
-        ICalcValue expResult = new CalcBaseValue(340);
+        ICalcValue expResult = new CalcValue(340);
         ICalcValue result = instance.performOperation(firstValue, secondValue);
         assertEquals(expResult.presentValue(), result.presentValue(),0);
     }
