@@ -82,8 +82,6 @@ public class PocketCalculatorGUI extends javax.swing.JFrame {
 
         jButton15.setText("/");
 
-        jTextField1.setText("Output");
-
         jButton16.setText("Clear");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
