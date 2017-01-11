@@ -6,7 +6,8 @@
 package pocketcalculator;
 
 /**
- *
+ *This is going to be the primary output for the calculator class
+ * 
  * @author Calibash
  */
 public class PocketCalculatorUI extends javax.swing.JFrame {
