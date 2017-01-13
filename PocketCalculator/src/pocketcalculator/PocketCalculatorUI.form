@@ -6,6 +6,10 @@
     </Component>
     <Component class="javax.swing.ButtonGroup" name="numberKeys">
     </Component>
+    <Component class="javax.swing.ButtonGroup" name="OperationKeys">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="NumericModificationKeys">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -91,7 +95,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="33" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -134,7 +138,7 @@
                   <Component id="jButtonSignChange" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButtonBackSpace" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="12" max="32767" attributes="0"/>
+              <EmptySpace pref="26" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -236,26 +240,41 @@
     <Component class="javax.swing.JButton" name="jButtonDecimal">
       <Properties>
         <Property name="text" type="java.lang.String" value="."/>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="NumericModificationKeys"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonMinusSign">
       <Properties>
         <Property name="text" type="java.lang.String" value="-"/>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="OperationKeys"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonPlusSign">
       <Properties>
         <Property name="text" type="java.lang.String" value="+"/>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="OperationKeys"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonMultiplicationSign">
       <Properties>
         <Property name="text" type="java.lang.String" value="*"/>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="OperationKeys"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonDivisionSign">
       <Properties>
         <Property name="text" type="java.lang.String" value="/"/>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="OperationKeys"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField1">
@@ -263,21 +282,33 @@
     <Component class="javax.swing.JButton" name="jButtonClear">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="NumericModificationKeys"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonEquals">
       <Properties>
         <Property name="text" type="java.lang.String" value="="/>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="OperationKeys"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonSignChange">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#xb1;"/>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="NumericModificationKeys"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonBackSpace">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x2190;"/>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="NumericModificationKeys"/>
+        </Property>
       </Properties>
     </Component>
   </SubComponents>

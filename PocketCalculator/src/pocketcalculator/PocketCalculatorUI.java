@@ -30,6 +30,8 @@ public class PocketCalculatorUI extends javax.swing.JFrame {
 
         canvas1 = new java.awt.Canvas();
         numberKeys = new javax.swing.ButtonGroup();
+        OperationKeys = new javax.swing.ButtonGroup();
+        NumericModificationKeys = new javax.swing.ButtonGroup();
         jButtonNumeric1 = new javax.swing.JButton();
         jButtonNumeric2 = new javax.swing.JButton();
         jButtonNumeric3 = new javax.swing.JButton();
@@ -99,22 +101,31 @@ public class PocketCalculatorUI extends javax.swing.JFrame {
         numberKeys.add(jButtonNumeric0);
 
         jButtonDecimal.setText(".");
+        NumericModificationKeys.add(jButtonDecimal);
 
         jButtonMinusSign.setText("-");
+        OperationKeys.add(jButtonMinusSign);
 
         jButtonPlusSign.setText("+");
+        OperationKeys.add(jButtonPlusSign);
 
         jButtonMultiplicationSign.setText("*");
+        OperationKeys.add(jButtonMultiplicationSign);
 
         jButtonDivisionSign.setText("/");
+        OperationKeys.add(jButtonDivisionSign);
 
         jButtonClear.setText("C");
+        NumericModificationKeys.add(jButtonClear);
 
         jButtonEquals.setText("=");
+        OperationKeys.add(jButtonEquals);
 
         jButtonSignChange.setText("±");
+        NumericModificationKeys.add(jButtonSignChange);
 
         jButtonBackSpace.setText("←");
+        NumericModificationKeys.add(jButtonBackSpace);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -167,7 +178,7 @@ public class PocketCalculatorUI extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jButtonEquals)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -203,7 +214,7 @@ public class PocketCalculatorUI extends javax.swing.JFrame {
                     .addComponent(jButtonEquals)
                     .addComponent(jButtonSignChange)
                     .addComponent(jButtonBackSpace))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         pack();
@@ -252,6 +263,8 @@ public class PocketCalculatorUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup NumericModificationKeys;
+    private javax.swing.ButtonGroup OperationKeys;
     private java.awt.Canvas canvas1;
     private javax.swing.JButton jButtonBackSpace;
     private javax.swing.JButton jButtonClear;
