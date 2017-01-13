@@ -29,71 +29,92 @@ public class PocketCalculatorUI extends javax.swing.JFrame {
     private void initComponents() {
 
         canvas1 = new java.awt.Canvas();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
+        numberKeys = new javax.swing.ButtonGroup();
+        jButtonNumeric1 = new javax.swing.JButton();
+        jButtonNumeric2 = new javax.swing.JButton();
+        jButtonNumeric3 = new javax.swing.JButton();
+        jButtonNumeric4 = new javax.swing.JButton();
+        jButtonNumeric5 = new javax.swing.JButton();
+        jButtonNumeric6 = new javax.swing.JButton();
+        jButtonNumeric7 = new javax.swing.JButton();
+        jButtonNumeric8 = new javax.swing.JButton();
+        jButtonNumeric9 = new javax.swing.JButton();
+        jButtonNumeric0 = new javax.swing.JButton();
+        jButtonDecimal = new javax.swing.JButton();
+        jButtonMinusSign = new javax.swing.JButton();
+        jButtonPlusSign = new javax.swing.JButton();
+        jButtonMultiplicationSign = new javax.swing.JButton();
+        jButtonDivisionSign = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
+        jButtonClear = new javax.swing.JButton();
+        jButtonEquals = new javax.swing.JButton();
+        jButtonSignChange = new javax.swing.JButton();
+        jButtonBackSpace = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonNumeric1.setText("1");
+        jButtonNumeric1.setActionCommand("");
+        numberKeys.add(jButtonNumeric1);
+        jButtonNumeric1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButtonNumeric1ActionPerformed(evt);
             }
         });
 
-        jButton2.setText("2");
+        jButtonNumeric2.setText("2");
+        jButtonNumeric2.setActionCommand("");
+        numberKeys.add(jButtonNumeric2);
 
-        jButton3.setText("3");
+        jButtonNumeric3.setText("3");
+        jButtonNumeric3.setActionCommand("");
+        numberKeys.add(jButtonNumeric3);
 
-        jButton4.setText("4");
+        jButtonNumeric4.setText("4");
+        jButtonNumeric4.setActionCommand("");
+        numberKeys.add(jButtonNumeric4);
 
-        jButton5.setText("5");
+        jButtonNumeric5.setText("5");
+        jButtonNumeric5.setActionCommand("");
+        numberKeys.add(jButtonNumeric5);
 
-        jButton6.setText("6");
+        jButtonNumeric6.setText("6");
+        jButtonNumeric6.setActionCommand("");
+        numberKeys.add(jButtonNumeric6);
 
-        jButton7.setText("7");
+        jButtonNumeric7.setText("7");
+        jButtonNumeric7.setActionCommand("");
+        numberKeys.add(jButtonNumeric7);
 
-        jButton8.setText("8");
+        jButtonNumeric8.setText("8");
+        jButtonNumeric8.setActionCommand("");
+        numberKeys.add(jButtonNumeric8);
 
-        jButton9.setText("9");
+        jButtonNumeric9.setText("9");
+        jButtonNumeric9.setActionCommand("");
+        numberKeys.add(jButtonNumeric9);
 
-        jButton10.setText("0");
+        jButtonNumeric0.setText("0");
+        jButtonNumeric0.setActionCommand("");
+        numberKeys.add(jButtonNumeric0);
 
-        jButton11.setText(".");
+        jButtonDecimal.setText(".");
 
-        jButton12.setText("-");
+        jButtonMinusSign.setText("-");
 
-        jButton13.setText("+");
+        jButtonPlusSign.setText("+");
 
-        jButton14.setText("*");
+        jButtonMultiplicationSign.setText("*");
 
-        jButton15.setText("/");
+        jButtonDivisionSign.setText("/");
 
-        jButton16.setText("C");
+        jButtonClear.setText("C");
 
-        jButton17.setText("=");
+        jButtonEquals.setText("=");
 
-        jButton18.setText("±");
+        jButtonSignChange.setText("±");
 
-        jButton19.setText("←");
+        jButtonBackSpace.setText("←");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,46 +127,46 @@ public class PocketCalculatorUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton16)
+                                .addComponent(jButtonClear)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButtonBackSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton18))
+                                .addComponent(jButtonSignChange))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jButton7)
+                                    .addComponent(jButtonNumeric7)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jButton8)
+                                    .addComponent(jButtonNumeric8)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jButton9))
+                                    .addComponent(jButtonNumeric9))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jButton4)
+                                    .addComponent(jButtonNumeric4)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jButton5)
+                                    .addComponent(jButtonNumeric5)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jButton6))
+                                    .addComponent(jButtonNumeric6))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jButton1)
+                                            .addComponent(jButtonNumeric1)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jButton2))
-                                        .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                            .addComponent(jButtonNumeric2))
+                                        .addComponent(jButtonNumeric0, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                                        .addComponent(jButtonDecimal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jButtonNumeric3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jButtonPlusSign, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButtonMinusSign, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButtonMultiplicationSign, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButtonDivisionSign, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton17)))))
+                                .addComponent(jButtonEquals)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -155,42 +176,42 @@ public class PocketCalculatorUI extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7)
-                    .addComponent(jButton8)
-                    .addComponent(jButton9)
-                    .addComponent(jButton12))
+                    .addComponent(jButtonNumeric7)
+                    .addComponent(jButtonNumeric8)
+                    .addComponent(jButtonNumeric9)
+                    .addComponent(jButtonMinusSign))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4)
-                    .addComponent(jButton5)
-                    .addComponent(jButton6)
-                    .addComponent(jButton13))
+                    .addComponent(jButtonNumeric4)
+                    .addComponent(jButtonNumeric5)
+                    .addComponent(jButtonNumeric6)
+                    .addComponent(jButtonPlusSign))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton14))
+                    .addComponent(jButtonNumeric1)
+                    .addComponent(jButtonNumeric2)
+                    .addComponent(jButtonNumeric3)
+                    .addComponent(jButtonMultiplicationSign))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton10)
-                    .addComponent(jButton11)
-                    .addComponent(jButton15))
+                    .addComponent(jButtonNumeric0)
+                    .addComponent(jButtonDecimal)
+                    .addComponent(jButtonDivisionSign))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton16)
-                    .addComponent(jButton17)
-                    .addComponent(jButton18)
-                    .addComponent(jButton19))
+                    .addComponent(jButtonClear)
+                    .addComponent(jButtonEquals)
+                    .addComponent(jButtonSignChange)
+                    .addComponent(jButtonBackSpace))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonNumeric1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNumeric1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonNumeric1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -232,25 +253,26 @@ public class PocketCalculatorUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Canvas canvas1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton jButtonBackSpace;
+    private javax.swing.JButton jButtonClear;
+    private javax.swing.JButton jButtonDecimal;
+    private javax.swing.JButton jButtonDivisionSign;
+    private javax.swing.JButton jButtonEquals;
+    private javax.swing.JButton jButtonMinusSign;
+    private javax.swing.JButton jButtonMultiplicationSign;
+    private javax.swing.JButton jButtonNumeric0;
+    private javax.swing.JButton jButtonNumeric1;
+    private javax.swing.JButton jButtonNumeric2;
+    private javax.swing.JButton jButtonNumeric3;
+    private javax.swing.JButton jButtonNumeric4;
+    private javax.swing.JButton jButtonNumeric5;
+    private javax.swing.JButton jButtonNumeric6;
+    private javax.swing.JButton jButtonNumeric7;
+    private javax.swing.JButton jButtonNumeric8;
+    private javax.swing.JButton jButtonNumeric9;
+    private javax.swing.JButton jButtonPlusSign;
+    private javax.swing.JButton jButtonSignChange;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.ButtonGroup numberKeys;
     // End of variables declaration//GEN-END:variables
 }
