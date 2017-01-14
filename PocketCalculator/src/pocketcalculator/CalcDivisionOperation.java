@@ -15,7 +15,7 @@ public class CalcDivisionOperation implements ICalcOperation{
     public ICalcValue performOperation(
             ICalcValue firstValue, 
             ICalcValue secondValue) {
-        if (secondValue.presentValue()!= 0){            
+        if (checkValueNotZero(secondValue)){            
             return new CalcValue(
                 firstValue.presentValue() / secondValue.presentValue());
         }
@@ -23,4 +23,14 @@ public class CalcDivisionOperation implements ICalcOperation{
                     "Division by zero, Not supported yet.");
   }
     
+    private boolean checkValueNotZero(ICalcValue value){
+        boolean checkResult = false;
+        checkResult = (
+                new Double(-0.0).equals(
+                new Double(value.presentValue()))||
+                new Double(0.0).equals(
+                        new Double(value.presentValue())));
+        return checkResult;
+        
+    }
 }
