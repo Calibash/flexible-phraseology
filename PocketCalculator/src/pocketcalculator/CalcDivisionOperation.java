@@ -25,11 +25,8 @@ public class CalcDivisionOperation implements ICalcOperation{
     
     private boolean checkValueNotZero(ICalcValue value){
         boolean checkResult = false;
-        checkResult = (
-                new Double(-0.0).equals(
-                new Double(value.presentValue()))||
-                new Double(0.0).equals(
-                        new Double(value.presentValue())));
+        if (value.presentValue() !=0)
+            checkResult = true;
         return checkResult;
         
     }
