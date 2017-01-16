@@ -31,12 +31,26 @@ public class CalcInvertSignTest {
      * Test of updateValue method, of class CalcModifysign.
      */
     @Test
-    public void testUpdateValue() {
+    public void testUpdateValuePositiveToNegative() {
         System.out.println("updateValue properly changes the sign"
-                + "of an input value");
-        ICalcValue current = new CalcValue(23);
+                + "of an input value from positive to negative");
+        ICalcValue current = new CalcValue(23.0);
         CalcInvertSign instance = new CalcInvertSign();
         ICalcValue expResult = new CalcValue(-23);
+        ICalcValue result = instance.updateValue(current);
+        assertEquals(expResult.presentValue(), result.presentValue(),0);       
+    }
+    
+        /**
+     * Test of updateValue method, of class CalcModifysign.
+     */
+    @Test
+    public void testUpdateValueNegativeToPositive() {
+        System.out.println("updateValue properly changes the sign"
+                + "of an input value from negative to positive");
+        ICalcValue current = new CalcValue(-23.0);
+        CalcInvertSign instance = new CalcInvertSign();
+        ICalcValue expResult = new CalcValue(23);
         ICalcValue result = instance.updateValue(current);
         assertEquals(expResult.presentValue(), result.presentValue(),0);       
     }

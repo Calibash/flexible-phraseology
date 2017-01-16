@@ -42,4 +42,15 @@ public class CalcSubtractionOperationTest {
         assertEquals(expResult.presentValue(), result.presentValue(), 0);
     }
     
+    @Test
+    public void testPerformSubtractionOnNegativeNumbers(){
+        System.out.println("subtracting a negative from a negative number");
+        ICalcValue firstValue = new CalcValue(-30);
+        ICalcValue secondValue = new CalcValue(-23);
+        CalcSubtractionOperation instance = new CalcSubtractionOperation();
+        ICalcValue expResult = new CalcValue(-7);
+        ICalcValue result = instance.performOperation(firstValue, secondValue);
+        assertEquals(expResult.presentValue(), result.presentValue(), 0);
+    }
+    
 }
