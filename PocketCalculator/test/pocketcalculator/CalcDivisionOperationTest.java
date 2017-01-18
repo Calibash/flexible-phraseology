@@ -43,6 +43,17 @@ public class CalcDivisionOperationTest {
     }
     
     @Test
+    public void testDivideSmallDouble(){
+        System.out.println("Small double division");
+        ICalcValue firstValue = new CalcValue(55.4);
+        ICalcValue secondValue = new CalcValue(3.2);
+        CalcDivisionOperation instance = new CalcDivisionOperation();
+        ICalcValue expResult = new CalcValue(17.3125);
+        ICalcValue result = instance.performOperation(firstValue, secondValue);
+        assertEquals(expResult.presentValue(), result.presentValue(), 0);
+    }
+    
+    @Test
         public void testDividesByZeroDoesntCrashEverything() {
         System.out.println("Divides By Zero Doesnt Crash Everything");
         ICalcValue firstValue = new CalcValue(320);
