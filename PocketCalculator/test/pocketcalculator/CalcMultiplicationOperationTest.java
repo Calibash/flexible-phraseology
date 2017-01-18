@@ -44,7 +44,7 @@ public class CalcMultiplicationOperationTest {
     
     @Test
     public void testPerformOperationSmallDoubleMultiplication(){
-        System.out.println("small integer multiplication");
+        System.out.println("small double multiplication");
         ICalcValue firstValue = new CalcValue(10.23);
         ICalcValue secondValue = new CalcValue(25.45);
         CalcMultiplicationOperation instance = new CalcMultiplicationOperation();

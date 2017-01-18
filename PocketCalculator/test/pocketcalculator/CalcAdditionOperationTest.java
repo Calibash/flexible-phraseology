@@ -44,11 +44,22 @@ public class CalcAdditionOperationTest {
      */
     @Test
     public void testPerformSmallAdditionOperation() {
-        System.out.println("perform small addition Operation");
+        System.out.println("perform small integer addition");
         ICalcValue input1 = new CalcValue(10);
         ICalcValue input2 = new CalcValue(14);
         CalcAdditionOperation instance = new CalcAdditionOperation();
         ICalcValue expResult = new CalcValue(24);
+        ICalcValue result = instance.performOperation(input1, input2);
+        assertEquals(expResult.presentValue(), result.presentValue(), 0);
+    }
+    
+    @Test
+    public void testPerformSmallDoubleMultiplication(){
+        System.out.println("perform small double addition");
+        ICalcValue input1 = new CalcValue(330.23423);
+        ICalcValue input2 = new CalcValue(14.7978);
+        CalcAdditionOperation instance = new CalcAdditionOperation();
+        ICalcValue expResult = new CalcValue(345.03203);
         ICalcValue result = instance.performOperation(input1, input2);
         assertEquals(expResult.presentValue(), result.presentValue(), 0);
     }
