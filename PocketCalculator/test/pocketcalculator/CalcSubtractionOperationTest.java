@@ -42,7 +42,8 @@ public class CalcSubtractionOperationTest {
         assertEquals(expResult.presentValue(), result.presentValue(), 0);
     }
     
-    @Test void testPerformSmallDoubleSubtraction(){
+    @Test 
+        public void testPerformSmallDoubleSubtraction(){
         System.out.println("Small double subtraction");
         ICalcValue firstValue = new CalcValue(734.234);
         ICalcValue secondValue = new CalcValue(2553.23);
