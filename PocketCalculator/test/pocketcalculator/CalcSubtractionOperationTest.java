@@ -42,6 +42,16 @@ public class CalcSubtractionOperationTest {
         assertEquals(expResult.presentValue(), result.presentValue(), 0);
     }
     
+    @Test void testPerformSmallDoubleSubtraction(){
+        System.out.println("Small double subtraction");
+        ICalcValue firstValue = new CalcValue(734.234);
+        ICalcValue secondValue = new CalcValue(2553.23);
+        CalcSubtractionOperation instance = new CalcSubtractionOperation();
+        ICalcValue expResult = new CalcValue(-1818.966);
+        ICalcValue result = instance.performOperation(firstValue, secondValue);
+        assertEquals(expResult.presentValue(), result.presentValue(), 0);
+    }
+    
     @Test
     public void testPerformSubtractionOnNegativeNumbers(){
         System.out.println("subtracting a negative from a negative number");
