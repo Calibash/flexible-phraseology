@@ -6,7 +6,7 @@
 package pocketcalculator;
 
 /**
- *
+ *perform sign inversion on input
  * @author Calibash
  */
 public class CalcInvertSign implements ICalcNumericModification{

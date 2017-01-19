@@ -6,7 +6,7 @@
 package pocketcalculator;
 
 /**
- *
+ * perform addition of multiple math value containers
  * @author Calibash
  */
 public class CalcAdditionOperation implements ICalcOperation{

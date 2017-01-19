@@ -6,7 +6,7 @@
 package pocketcalculator;
 
 /**
- *
+ *perform division operation on multiple value inputs
  * @author Calibash
  */
 public class CalcDivisionOperation implements ICalcOperation{

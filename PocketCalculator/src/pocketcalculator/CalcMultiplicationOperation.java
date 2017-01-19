@@ -6,7 +6,7 @@
 package pocketcalculator;
 
 /**
- *
+ * perform multiplication operation on multiple inputs
  * @author Calibash
  */
 public class CalcMultiplicationOperation implements ICalcOperation{
