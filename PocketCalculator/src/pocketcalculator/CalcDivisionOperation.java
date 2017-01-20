@@ -17,7 +17,7 @@ public class CalcDivisionOperation implements ICalcOperation{
             ICalcValue secondValue) {
         if (checkValueNotZero(secondValue)){            
             return new CalcValue(
-                firstValue.presentValue() / secondValue.presentValue());
+                (firstValue.presentValue()*1.0) / (secondValue.presentValue()*1.0));
         }
         throw new UnsupportedOperationException(
                     "Division by zero, Not supported yet.");
