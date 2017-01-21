@@ -24,9 +24,7 @@ public class CalcDivisionOperation implements ICalcOperation{
   }
     
     private boolean checkValueNotZero(ICalcValue value){
-        boolean checkResult = false;
-        if (value.presentValue() !=0)
-            checkResult = true;
+        boolean checkResult = value.validDivisor();
         return checkResult;
         
     }

@@ -6,10 +6,12 @@
 package pocketcalculator;
 
 /**
- *  purpose; abstract storage of values, constants, etc stored internally by
- * the calculator.
+ * This interface encompasses the needs of a numeric, operable value used by the
+ * pocketCalculator system. this serves as a wrapping for the numeric value 
+ * itself, as well as any required checks which need to be exposed to components
  * @author Calibash
  */
 public interface ICalcValue {
     double presentValue();
+    boolean validDivisor();
 }
