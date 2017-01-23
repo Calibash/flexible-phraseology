@@ -9,7 +9,7 @@ package pocketcalculator;
  *perform sign inversion on input
  * @author Calibash
  */
-public class CalcInvertSign extends AbstractNumericModification{
+public class CalcInvertSign extends AbstractCalcNumericModification{
 
     @Override
     public ICalcValue updateValue(ICalcValue current) {

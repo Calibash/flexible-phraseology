@@ -9,7 +9,7 @@ package pocketcalculator;
  *
  * @author Calibash
  */
-public abstract class AbstractNumericModification 
+public abstract class AbstractCalcNumericModification 
         implements ICalcNumericModification {
     
     @Override
