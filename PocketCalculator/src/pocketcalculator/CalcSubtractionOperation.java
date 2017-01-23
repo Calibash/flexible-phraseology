@@ -9,7 +9,7 @@ package pocketcalculator;
  * perform subtraction of second input from the first
  * @author Calibash
  */
-public class CalcSubtractionOperation implements ICalcOperation{
+public class CalcSubtractionOperation extends AbstractCalcOperation{
     public CalcSubtractionOperation(){}
     @Override
     public ICalcValue performOperation(

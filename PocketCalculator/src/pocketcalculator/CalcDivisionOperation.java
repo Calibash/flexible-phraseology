@@ -9,7 +9,7 @@ package pocketcalculator;
  *perform division operation on multiple value inputs
  * @author Calibash
  */
-public class CalcDivisionOperation implements ICalcOperation{
+public class CalcDivisionOperation extends AbstractCalcOperation{
     public CalcDivisionOperation(){}
     @Override
     public ICalcValue performOperation(

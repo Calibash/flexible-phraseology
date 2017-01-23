@@ -9,7 +9,7 @@ package pocketcalculator;
  * perform addition of multiple math value containers
  * @author Calibash
  */
-public class CalcAdditionOperation implements ICalcOperation{
+public class CalcAdditionOperation extends AbstractCalcOperation{
     public CalcAdditionOperation(){}
     @Override
     public ICalcValue performOperation(
