@@ -15,7 +15,7 @@ package pocketcalculator;
  * decimal points, inputting a zero value as the denominator for division, etc.
  * @author Calibash
  */
-public class CalcValue implements ICalcValue{
+public class CalcValue extends AbstractCalcValue{
     private final double storedUserInput;
     public CalcValue(double userInput){
         this.storedUserInput = userInput;
