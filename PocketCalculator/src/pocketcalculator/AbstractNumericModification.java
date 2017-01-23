@@ -9,10 +9,11 @@ package pocketcalculator;
  *
  * @author Calibash
  */
-public abstract class AbstractCalcOperation implements ICalcOperation{
-
+public abstract class AbstractNumericModification 
+        implements ICalcNumericModification {
+    
     @Override
-    public ICalcValue performOperation(ICalcValue firstValue, ICalcValue secondValue) {
+    public ICalcValue updateValue(ICalcValue current) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
