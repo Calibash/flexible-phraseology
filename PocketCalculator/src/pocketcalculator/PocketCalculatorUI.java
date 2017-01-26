@@ -6,7 +6,9 @@
 package pocketcalculator;
 
 /**
- *This is going to be the primary output for the calculator class
+ *This is going to be the primary output for the calculator class. Should only 
+ * contain UI level logic, interface with business logic through existing 
+ * objects and interfaces.
  * 
  * @author Calibash
  */
