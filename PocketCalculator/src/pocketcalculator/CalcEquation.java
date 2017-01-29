@@ -5,6 +5,9 @@
  */
 package pocketcalculator;
 
+import java.util.List;
+
+
 /**
  * A queue of inputted values and operations, to be output to the calculator 
  * display on command
@@ -13,7 +16,12 @@ package pocketcalculator;
 public class CalcEquation {
     //take input of some series of values and operations. new values go into the
     //stored queue, to be displayed on the screen until cleared
-    
+    private final ICalcOperation originOperation;
+    private final ICalcValue originValue;
+    public CalcEquation(final ICalcOperation operation, final ICalcValue value){
+        this.originOperation = operation;
+        this.originValue = value;
+    }
     //output the current value of the existing equation
     
     //delete the most recent operation or value
