@@ -15,7 +15,23 @@ public abstract class AbstractCalcQueue {
         this.initialValue = initialValue;    
     }
     
-    public void addToQueue(AbstractCalcOperation operation){
-        throw new UnsupportedOperationException("Not supported yet."); //TODO - implement method
+    /**
+     * add an operation to be performed onto the initial value with a new value
+     * @param operation -a valid operation to be performed 
+     * @param value - a value for the selected operation to be performed with
+     */
+    public void addToQueue(
+            AbstractCalcOperation operation,
+            AbstractCalcValue value//TODO - CLS - possible decorator structure?
+                    ){
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    /**
+     * perform all stored operations and output the result
+     * @return result of performing all queued operations on initial value
+     */
+    public AbstractCalcValue executeQueue(){
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
