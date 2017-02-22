@@ -19,8 +19,9 @@ package pocketcalculator;
  * @author Calibash
  */
 public class CalcRunner {
+    private AbstractCalcValue displayValue;
     public CalcRunner(){
-    
+        this.displayValue = new CalcValue(0);
     }
     //note, the following operations should probably be abstracted, but for the 
     //sake of actually getting this project done...
@@ -29,6 +30,9 @@ public class CalcRunner {
     public void callAddition(){}
     public void callSubtraction(){}
     public AbstractCalcValue callEquals(){
+        //output updated display value
+        //clear active modification operations
+        
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
