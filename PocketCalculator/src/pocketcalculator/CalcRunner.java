@@ -19,9 +19,10 @@ package pocketcalculator;
  * @author Calibash
  */
 public class CalcRunner {
-    private AbstractCalcValue displayValue;
+    private AbstractCalcQueue previousEntries;
+    private AbstractCalcValue operatingValue;
     public CalcRunner(){
-        this.displayValue = new CalcValue(0);
+        this.operatingValue = new CalcValue(0);
     }
     //note, the following operations should probably be abstracted, but for the 
     //sake of actually getting this project done...
