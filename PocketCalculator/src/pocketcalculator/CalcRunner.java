@@ -22,5 +22,13 @@ public class CalcRunner {
     public CalcRunner(){
     
     }
-    
+    //note, the following operations should probably be abstracted, but for the 
+    //sake of actually getting this project done...
+    public void callMultiplication(){}
+    public void callDivision(){}
+    public void callAddition(){}
+    public void callSubtraction(){}
+    public AbstractCalcValue callEquals(){
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
