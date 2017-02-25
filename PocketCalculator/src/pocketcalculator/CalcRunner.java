@@ -26,14 +26,29 @@ public class CalcRunner {
     }
     //note, the following operations should probably be abstracted, but for the 
     //sake of actually getting this project done...
-    public void callMultiplication(){}
-    public void callDivision(){}
-    public void callAddition(){}
-    public void callSubtraction(){}
+    public void callMultiplication(){
+        //add a new multiplication operation instance onto the queue
+    }
+    public void callDivision(){
+        //add a new division operation instance onto the queue
+    }
+    public void callAddition(){
+        //add a new addition operation instance onto the queue
+    }
+    public void callSubtraction(){
+        //add a new subtraction operation instance onto the queue
+    }
     public AbstractCalcValue callEquals(){
         //output updated display value
         //clear active modification operations
         
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    public void displayQueueContents(){
+        //use some format to present contents of queue, prefer internal method
+    }
+    
+    public void clearQueue(){
+        //call clear operation on queue
     }
 }
