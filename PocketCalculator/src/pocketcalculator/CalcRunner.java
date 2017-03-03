@@ -21,11 +21,17 @@ package pocketcalculator;
 public class CalcRunner {
     private AbstractCalcQueue previousEntries;
     private AbstractCalcValue operatingValue;
+    private AbstractCalcOperation currentOperation;
     public CalcRunner(){
         this.operatingValue = new CalcValue(0);
     }
     //note, the following operations should probably be abstracted, but for the 
     //sake of actually getting this project done...
+    public void enterValue(AbstractCalcValue value){
+        //add value to queue
+//        previousEntries.addToQueue(this.currentOperation, value);
+    }
+    
     public void callMultiplication(){
         //add a new multiplication operation instance onto the queue
     }
