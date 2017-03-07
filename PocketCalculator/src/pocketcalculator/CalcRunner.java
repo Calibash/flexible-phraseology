@@ -29,8 +29,8 @@ public class CalcRunner {
     //sake of actually getting this project done...
     public void enterValue(AbstractCalcValue value){
         //add value to queue
-        //previousEntries.addToQueue(this.currentOperation, value);
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        previousEntries.addToQueue(this.currentOperation, value);
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     public void callMultiplication(){
