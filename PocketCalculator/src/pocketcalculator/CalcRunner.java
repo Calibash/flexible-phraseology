@@ -56,7 +56,9 @@ public class CalcRunner {
     public AbstractCalcValue callEquals(){
         //output updated display value
         //clear active modification operations
-        
+        this.previousEntries.addToQueue(this.currentOperation, this.operatingValue);
+        this.operatingValue = new CalcValue(0.0);
+        //note that for this functionality to work in this case, there needs to be some form of null operation
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     public void displayQueueContents(){
