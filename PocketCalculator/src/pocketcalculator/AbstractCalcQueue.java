@@ -10,13 +10,15 @@ package pocketcalculator;
  * @author Calibash
  */
 public abstract class AbstractCalcQueue {
-    private AbstractCalcValue initialValue;
-    public AbstractCalcQueue(AbstractCalcValue initialValue){
-        this.initialValue = initialValue;    
+    //the default value should exist to stand as an end point for all operations
+    private AbstractCalcValue defaultValue;
+    public AbstractCalcQueue(AbstractCalcValue defaultValue){
+        this.defaultValue = defaultValue;    
     }
     
     /**
-     * add an operation to be performed onto the initial value with a new value
+     * add an operation to be performed onto the current queue value with a 
+     * new value /operation pair
      * @param operation -a valid operation to be performed 
      * @param value - a value for the selected operation to be performed with
      */
