@@ -22,7 +22,7 @@ public abstract class AbstractCalcQueue {
      */
     public void addToQueue(
             AbstractCalcOperation operation,
-            AbstractCalcValue value//TODO - CLS - possible decorator structure?
+            AbstractCalcValue value
                     ){
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
