@@ -24,6 +24,7 @@ public class CalcRunner {
     private AbstractCalcOperation currentOperation;
     public CalcRunner(){
         this.operatingValue = new CalcValue(0);
+        this.previousEntries = new CalcQueue(this.operatingValue);
     }
     //note, the following operations should probably be abstracted, but for the 
     //sake of actually getting this project done...
