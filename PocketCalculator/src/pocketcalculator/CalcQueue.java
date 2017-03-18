@@ -27,5 +27,7 @@ public class CalcQueue extends AbstractCalcQueue {
     
     //internal function for order of operations?
     
+    //multiplication before addition, parentheises? 
+    
     //implementation of queue addition and execution
 }
