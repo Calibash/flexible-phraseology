@@ -54,6 +54,17 @@ public class CalcDivisionOperationTest {
     }
     
     @Test
+    public void testDivideLargeDouble(){
+        System.out.println("Large double division");
+        ICalcValue firstValue = new CalcValue(5500.4);
+        ICalcValue secondValue = new CalcValue(100);
+        CalcDivisionOperation instance = new CalcDivisionOperation();
+        ICalcValue expResult = new CalcValue(55.004);
+        ICalcValue result = instance.performOperation(firstValue, secondValue);
+        assertEquals(expResult.presentValue(), result.presentValue(), 0);
+    }
+    
+    @Test
         public void testDividesByZeroDoesntCrashEverything() {
         System.out.println("Divides By Zero Doesnt Crash Everything");
         ICalcValue firstValue = new CalcValue(320);
