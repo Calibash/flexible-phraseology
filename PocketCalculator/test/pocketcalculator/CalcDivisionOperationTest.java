@@ -32,7 +32,7 @@ public class CalcDivisionOperationTest {
      * Test of performOperation method, of class CalcDivisionOperation.
      */
     @Test
-    public void testPerformOperation() {
+    public void testDivideSmallInteger() {
         System.out.println("small integer division");
         ICalcValue firstValue = new CalcValue(320);
         ICalcValue secondValue = new CalcValue(10);
