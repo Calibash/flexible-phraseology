@@ -32,7 +32,7 @@ public class CalcSubtractionOperationTest {
      * Test of performOperation method, of class CalcSubtractionOperation.
      */
     @Test
-    public void testPerformSmallSubtractionOperation() {
+    public void testSubtractSmallInteger() {
         System.out.println("Small integer subtraction");
         ICalcValue firstValue = new CalcValue(343);
         ICalcValue secondValue = new CalcValue(23);
@@ -43,7 +43,7 @@ public class CalcSubtractionOperationTest {
     }
     
     @Test 
-        public void testPerformSmallDoubleSubtraction(){
+        public void testSubtractSmallDouble(){
         System.out.println("Small double subtraction");
         ICalcValue firstValue = new CalcValue(734.234);
         ICalcValue secondValue = new CalcValue(2553.23);
