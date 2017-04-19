@@ -43,7 +43,7 @@ public class CalcAdditionOperationTest {
      * Test of performOperation method, of class CalculatorAdditionOperation.
      */
     @Test
-    public void testPerformSmallAdditionOperation() {
+    public void testAddSmallInteger() {
         System.out.println("perform small integer addition");
         ICalcValue input1 = new CalcValue(10);
         ICalcValue input2 = new CalcValue(14);
@@ -54,7 +54,7 @@ public class CalcAdditionOperationTest {
     }
     
     @Test
-    public void testPerformSmallDoubleMultiplication(){
+    public void testAddSmallDouble(){
         System.out.println("perform small double addition");
         ICalcValue input1 = new CalcValue(330.23423);
         ICalcValue input2 = new CalcValue(14.7978);
@@ -65,7 +65,7 @@ public class CalcAdditionOperationTest {
     }
     
     @Test
-    public void testPerformLargeAdditionOperation() {
+    public void testAddLargeInteger() {
         System.out.println("perform large addition Operation");
         ICalcValue input1 = new CalcValue(1023434);
         ICalcValue input2 = new CalcValue(1403432);
