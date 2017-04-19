@@ -32,7 +32,7 @@ public class CalcMultiplicationOperationTest {
      * Test of performOperation method, of class CalcMultiplicationOperation.
      */
     @Test
-    public void testPerformSmallInteger() {
+    public void testMultiplySmallInteger() {
         System.out.println("small integer multiplication");
         ICalcValue firstValue = new CalcValue(10);
         ICalcValue secondValue = new CalcValue(34);
@@ -43,7 +43,7 @@ public class CalcMultiplicationOperationTest {
     }
     
     @Test
-    public void testPerformSmallDouble(){
+    public void testMultiplySmallDouble(){
         System.out.println("small double multiplication");
         ICalcValue firstValue = new CalcValue(10.23);
         ICalcValue secondValue = new CalcValue(25.45);
