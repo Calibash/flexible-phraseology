@@ -15,7 +15,6 @@ public class CalcAdditionOperation extends AbstractCalcOperation{
     public ICalcValue performOperation(
             ICalcValue firstValue, 
             ICalcValue secondValue) {
-        //TODO - confirm structural stability
         return new CalcValue(
                 firstValue.presentValue() + secondValue.presentValue());
     }
