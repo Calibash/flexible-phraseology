@@ -12,6 +12,12 @@ package pocketcalculator;
 public class CalcAdditionOperation extends AbstractCalcOperation{
     public CalcAdditionOperation(){}
     @Override
+    /**
+     * Add the contents of the firstValue to the secondValue in a non-integer 
+     * specific operation. 
+     * @firstValue
+     * @secondValue
+     */
     public ICalcValue performOperation(
             ICalcValue firstValue, 
             ICalcValue secondValue) {
